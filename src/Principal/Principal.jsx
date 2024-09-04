@@ -4,8 +4,15 @@ import './Principal.css'
 function Principal() {
     return(
     <>
-    <p>Principal</p>
+        <section class="layout">
+        <div class="header">1</div>
+        <div class="main">
+            <p>Parrafo</p>
+        </div>
+        <div class="footer">3</div>
+        </section>
     </>
     );
 }
+
 export default Principal;
