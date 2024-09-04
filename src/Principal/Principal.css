@@ -1,5 +1,13 @@
+body {
+    background-color: #234345;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
+
 .layout {
     width: 100%;
+    height: 100vh; 
     display: grid;
     grid:
         "header" auto
@@ -14,12 +22,14 @@
     background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
     padding: 20px;
     text-align: center;
+    width: 100%; 
 }
 
 .main {
     grid-area: main;
     padding: 20px;
-    color: #000; 
+    color: #000;
+    width: 100%; 
 }
 
 .footer {
@@ -28,7 +38,5 @@
     padding: 20px;
     text-align: center;
     color: white;
+    width: 100%; /* Asegura que el footer abarque todo el ancho */
 }
-
-
-
