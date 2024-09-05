@@ -1,4 +1,3 @@
-// import {Button, TextField, Box} from "@mui/material";
 import './Principal.css';
 import FacebookIcon from '../assets/facebook.svg';
 import YoutubeIcon from '../assets/youtube.svg';
@@ -7,15 +6,16 @@ import InstagramIcon from '../assets/instagram.svg';
 import MailIcon from '../assets/email.svg';
 import WebIcon from '../assets/web.svg';
 
-
+import CardInfo from '../Componentes/CardInfo';
 
 function Principal() {
     return(
     <>
         <section className="layout">
         <div className="header">1</div>
-        <div className="main">
-            <p>Parrafo</p>
+      
+        </div>
+            <CardInfo NombreCurso="Capacitación: “Archivos: Datos personales y Acceso a la informacion: un vínculo normativo” ---> 24/09/2024"FechaCurso="19/09/2024" LugarCurso="Virtual" ExpositorCurso="Dirección de Archivos" HoraCurso="11:00" TextoBoton="Ver Disponibilidad"/>
         </div>
 
         <div className="footer">
@@ -55,7 +55,6 @@ function Principal() {
                 <img src={WebIcon} alt="Web" />
                 </a>
                 <p>ivai.org.mx</p>
-            </div>
             </div>
 
         </section>
