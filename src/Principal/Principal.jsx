@@ -8,11 +8,7 @@ import InstagramIcon from '../assets/instagram.svg';
 import MailIcon from '../assets/email.svg';
 import WebIcon from '../assets/web.svg';
 import CardInfo from '../Componentes/CardInfo';
-<<<<<<< HEAD
 import Ubi from '../assets/ubi.svg'
-=======
-import PopupMSJConfirmacion from '../Componentes/PopupMSJConfirmacion';
->>>>>>> f06ac6ebed31698e1490ab5f7def11fae2ce3e0c
 
 function Principal() {
     return (

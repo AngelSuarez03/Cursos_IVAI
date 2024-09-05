@@ -57,8 +57,6 @@ body {
     justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
 .ImageConfirmacion {
     max-height: 30vh;
     filter: invert(45%) sepia(21%) saturate(1418%) hue-rotate(260deg) brightness(83%) contrast(82%);;
@@ -66,7 +64,6 @@ body {
 
 /*FOOTER*/
 
->>>>>>> f06ac6ebed31698e1490ab5f7def11fae2ce3e0c
 .footer {
     grid-row: 5; 
     display: flex;
