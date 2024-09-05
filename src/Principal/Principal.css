@@ -52,10 +52,10 @@ body {
     font-size: 4rem; 
     z-index: 1; 
 }
-.main {
+.InfoCursos {
     grid-area: main;
-    color: #000;
-    width: 100%; 
+    margin: auto;
+    justify-content: center;
 }
 
 /*FOOTER*/
