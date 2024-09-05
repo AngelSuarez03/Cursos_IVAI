@@ -2,12 +2,12 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-    width: 100%; 
+    width: 100%;
 }
 
 .layout {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     display: grid;
     grid:
         "header" auto
@@ -19,37 +19,37 @@ body {
 
 .header {
     grid-area: header;
-    background: linear-gradient(to bottom, #a35494 72%, rgba(163, 82, 124, 0) 100%);
-    height: 30vh;
-    position: relative; 
-
-    text-align: center;
-    height: 18rem;
-    width: 100%; 
+    background: #a35494;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 18vh; 
+    position: relative;
 }
 
 .header-img-left, .header-img-right {
-    position: absolute;
-    top: 50%; 
-    transform: translateY(-50%);
-    height: 80%; 
+    max-height: 90%; 
+    width: auto; 
 }
 
 .header-img-left {
     left: 20px; 
+    position: absolute; 
 }
 
 .header-img-right {
     right: 20px; 
+    position: absolute;
 }
 
 .header-title {
-    position: absolute;
-    top: 20%; 
-    left: 45%; 
-    transform: translate(-50%, -50%); 
+    flex: 1; 
+    text-align: center; 
     color: white;
-    font-size: 4rem; 
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    white-space: nowrap; 
     z-index: 1; 
 }
 .InfoCursos {
@@ -69,36 +69,17 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 22rem; /* Espacio entre cada grupo */
+    justify-content: center;
     grid-area: footer;
     background-color: #A35494;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;    
+    padding: 10px;
     color: white;
-    height: 1rem;
     width: 100%;
-}
-
-.footer .social-group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 30px;
-  gap: 5px; 
-}
-
-.footer .social-group a {
-  margin: 5px; 
-}
-
-.footer .social-group img {
-  width: 35px; 
-  filter: invert(100%); 
 }
 
 .footer p {
     font-size: 1.5vh;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
