@@ -8,6 +8,7 @@ import InstagramIcon from '../assets/instagram.svg';
 import MailIcon from '../assets/email.svg';
 import WebIcon from '../assets/web.svg';
 import CardInfo from '../Componentes/CardInfo';
+import PopupMSJConfirmacion from '../Componentes/PopupMSJConfirmacion';
 
 function Principal() {
     return(
