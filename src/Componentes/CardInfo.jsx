@@ -1,5 +1,5 @@
 import { Button, Card, CardActions, CardContent, CardHeader, Typography } from "@mui/material";
-import "../Componentes/CardInfo.css"
+import './CardInfo.css'
 
 function CardInfo(Props) {
     return (
