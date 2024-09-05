@@ -1,19 +1,19 @@
 import { Button, Card, CardActions, CardContent, CardHeader, Typography } from "@mui/material";
 import "../Componentes/CardInfo.css"
 
-function CardInfo(NombreCurso, Capacitador, Lugar, Fecha, Hora, TxtBoton) {
+function CardInfo(Props) {
     return (
         <>
             <Card variant="outlined" className="EstiloCard">
-                <CardHeader className="HeaderCard" title="Capacitación: “Archivos: Datos personales y Acceso a la informacion: un vínculo normativo” ---> 24/09/2024" />
+                <CardHeader className="HeaderCard" title={Props.NombreCurso} />
                 <CardContent className="ContenidoCard">
-                    <Typography variant="body2">Persona que imparte el curso : Dirección de Archivos</Typography>
-                    <Typography variant="body2">Lugar: Virtual</Typography>
-                    <Typography variant="body2">Fecha: 24/09/224</Typography>
-                    <Typography variant="body2">Hora: 11:00</Typography>
+                    <Typography variant="body2">Persona que imparte el curso : {Props.ExpositorCurso}</Typography>
+                    <Typography variant="body2">Lugar: {Props.LugarCurso}</Typography>
+                    <Typography variant="body2">Fecha: {Props.FechaCurso}</Typography>
+                    <Typography variant="body2">Hora: {Props.HoraCurso}</Typography>
                 </CardContent>
                 <CardActions>
-                    <Button className="Boton">Ver Disponibilidad</Button>
+                    <Button variant="contained" className="Boton">{Props.TextoBoton}</Button>
                 </CardActions>
             </Card>
         </>
