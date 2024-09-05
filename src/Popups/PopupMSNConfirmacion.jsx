@@ -1,0 +1,6 @@
+function PopupMSNConfirmacion() {
+    return (
+    <>
+    </>
+    )
+}

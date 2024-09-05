@@ -1,10 +1,10 @@
 import { Button, Card, CardActions, CardContent, CardHeader, Typography } from "@mui/material";
-import "../Componentes/CardInfo.css"
+import "./CardInfo.css"
 
 function CardInfo(Props) {
     return (
         <>
-            <Card variant="outlined" className="EstiloCard">
+            <Card variant="elevation" className="EstiloCard">
                 <CardHeader className="HeaderCard" title={Props.NombreCurso} />
                 <CardContent className="ContenidoCard">
                     <Typography variant="body2">Persona que imparte el curso : {Props.ExpositorCurso}</Typography>
