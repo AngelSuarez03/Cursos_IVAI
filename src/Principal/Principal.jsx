@@ -1,3 +1,5 @@
+import rlceImage from '../Imagenes/rlce.webp'; 
+import ivaiImage from '../Imagenes/ivai.webp'
 import './Principal.css';
 import FacebookIcon from '../assets/facebook.svg';
 import YoutubeIcon from '../assets/youtube.svg';
@@ -5,17 +7,23 @@ import TwitterIcon from '../assets/twitter-x.svg';
 import InstagramIcon from '../assets/instagram.svg';
 import MailIcon from '../assets/email.svg';
 import WebIcon from '../assets/web.svg';
-
 import CardInfo from '../Componentes/CardInfo';
 
 function Principal() {
     return(
     <>
-        <section className="layout">
-        <div className="header">1</div>
+        <section class="layout">
+        <div class="header">
+            <img src={rlceImage} alt="" className="header-img-right"/>
+            <h1 className="header-title">
+                    Cursos disponibles
+            </h1>
+            <img src={ivaiImage} alt="" className="header-img-left"/>
+        </div>
       
         </div>
             <CardInfo NombreCurso="Capacitación: “Archivos: Datos personales y Acceso a la informacion: un vínculo normativo” ---> 24/09/2024"FechaCurso="19/09/2024" LugarCurso="Virtual" ExpositorCurso="Dirección de Archivos" HoraCurso="11:00" TextoBoton="Ver Disponibilidad"/>
+
         </div>
 
         <div className="footer">
