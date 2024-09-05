@@ -21,36 +21,35 @@ body {
     grid-area: header;
     background: linear-gradient(to bottom, #a35494 72%, rgba(163, 82, 124, 0) 100%);
     height: 30vh;
-    position: relative; /* Necesario para posicionar las imágenes */
+    position: relative; 
     text-align: center;
     width: 100%; 
 }
 
 .header-img-left, .header-img-right {
     position: absolute;
-    top: 50%; /* Ajusta la posición vertical de las imágenes */
+    top: 50%; 
     transform: translateY(-50%);
-    height: 80%; /* Ajusta la altura si es necesario */
+    height: 80%; 
 }
 
 .header-img-left {
-    left: 20px; /* Ajusta el espacio desde el borde izquierdo */
+    left: 20px; 
 }
 
 .header-img-right {
-    right: 20px; /* Ajusta el espacio desde el borde derecho */
+    right: 20px; 
 }
 
 .header-title {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20%; 
+    left: 45%; 
+    transform: translate(-50%, -50%); 
     color: white;
-    font-size: 2rem; /* Ajusta el tamaño de la fuente según sea necesario */
-    z-index: 1; /* Asegura que el título esté sobre las imágenes */
+    font-size: 4rem; 
+    z-index: 1; 
 }
-
 .main {
     grid-area: main;
     color: #000;
