@@ -9,10 +9,6 @@ body {
 }
 
 .layout {
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Asegura que el contenedor ocupe el 100% de la altura de la pantalla */
     flex: 1; 
     display: grid;
     grid-template-rows: auto 1fr auto; 
@@ -66,8 +62,8 @@ body {
     max-width: 60%;
 }
 
-.IconoCard {
-    max-height: 20vh;
+.ImageConfirmacion {
+    max-height: 30vh;
     filter: invert(45%) sepia(21%) saturate(1418%) hue-rotate(260deg) brightness(83%) contrast(82%);;
 }
 
@@ -112,9 +108,10 @@ body {
 
 
 .imgUb {
-    width: 5vw; 
-    height: auto;
-    max-width: 100%;
+    width: 5vw;
+    height: 4vh;
+    max-width: 20vw;
+    max-height: 20vh;
     filter: invert(20%) sepia(85%) saturate(1200%) hue-rotate(330deg) brightness(95%) contrast(90%);
     vertical-align: middle;
 }
@@ -123,20 +120,17 @@ body {
 /*FOOTER*/
 
 .footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    grid-row: 5; 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #A35494;
     text-align: center;
     color: white;
     width: 100%;
     padding-top: 2.2vh;
-    padding-bottom: 2vh; 
+    padding-bottom: 2vh;   
 
     height: 1rem;
 
@@ -144,6 +138,8 @@ body {
     align-items: center; 
     width: 100%;
     position: relative;
+
+
 }
 
 .footer p {
