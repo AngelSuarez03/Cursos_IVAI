@@ -51,9 +51,9 @@ body {
     z-index: 1; 
 }
 
-.Main {
-    grid-row: 2; 
-    background: linear-gradient(#a35494, #FFFFFF 30%);
+.Main{
+    grid-row: 2;
+    background: linear-gradient(#A35494, #ffffff 30%);
     justify-content: center;
 }
 
@@ -88,24 +88,30 @@ body {
 
 .address-container {
     margin-top: 7%;
-    font-size: 130%;
+    font-size: 1.3rem;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    display: inline-flex;
     display: flex;
-    margin-left: 30%;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
 }
 
 .dir {
     color: #555;
-    margin: 0; 
-    margin-right: 10px; 
+    text-align: center; 
+    margin-right: 5px;
 }
+
 
 .imgUb {
-    width: 30px; 
-    height: auto; 
+    width: 2vw;
     filter: invert(20%) sepia(85%) saturate(1200%) hue-rotate(330deg) brightness(95%) contrast(90%);
+    vertical-align: middle;
 }
-
-
 
 
 /*FOOTER*/
