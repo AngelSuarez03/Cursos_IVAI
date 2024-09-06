@@ -51,10 +51,15 @@ body {
     z-index: 1; 
 }
 
-.InfoCursos {
+.Main {
     grid-row: 2; 
-    margin: auto;
+    background: linear-gradient(#a35494, #FFFFFF 30%);
     justify-content: center;
+}
+
+.InfoCursos {
+    margin: auto;
+    max-width: 60%;
 }
 
 .ImageConfirmacion {
