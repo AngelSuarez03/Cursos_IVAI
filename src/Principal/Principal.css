@@ -62,8 +62,8 @@ body {
     max-width: 60%;
 }
 
-.ImageConfirmacion {
-    max-height: 30vh;
+.IconoCard {
+    max-height: 20vh;
     filter: invert(45%) sepia(21%) saturate(1418%) hue-rotate(260deg) brightness(83%) contrast(82%);;
 }
 
@@ -111,7 +111,7 @@ body {
 /*FOOTER*/
 
 .footer {
-    grid-row: 5; 
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,7 +121,7 @@ body {
     color: white;
     width: 100%;
     padding-top: 2.2vh;
-    padding-bottom: 2vh;   
+    padding-bottom: 2vh; 
 
     height: 1rem;
 
@@ -129,8 +129,6 @@ body {
     align-items: center; 
     width: 100%;
     position: relative;
-
-
 }
 
 .footer p {
