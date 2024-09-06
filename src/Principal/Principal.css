@@ -103,12 +103,14 @@ body {
 .dir {
     color: #555;
     text-align: center; 
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 
 .imgUb {
-    width: 2vw;
+    width: 5vw; 
+    height: auto;
+    max-width: 100%;
     filter: invert(20%) sepia(85%) saturate(1200%) hue-rotate(330deg) brightness(95%) contrast(90%);
     vertical-align: middle;
 }
