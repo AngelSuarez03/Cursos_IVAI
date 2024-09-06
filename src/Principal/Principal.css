@@ -8,6 +8,21 @@ body {
     min-height: 100vh; 
 }
 
+@font-face {
+    font-family: 'Font-Titulos';
+    src: url(../Fonts/Gotham-Black.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Font-Contenido';
+    src: url(../Fonts/SourceSansPro-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Font-Contenido_bold';
+    src: url(../Fonts/SourceSansPro-Bold.ttf) format('ttf');
+}
+
 .layout {
 
     display: flex;
@@ -47,6 +62,7 @@ body {
 }
 
 .header-title {
+    font-family: 'Font-Titulo', sans-serif;
     flex: 1; 
     text-align: center; 
     color: white;
@@ -70,7 +86,7 @@ body {
     margin-bottom: 10vh;
 }
 
-.ImageConfirmacion {
+.IconoCard {
     max-height: 30vh;
     filter: invert(45%) sepia(21%) saturate(1418%) hue-rotate(260deg) brightness(83%) contrast(82%);;
 }
@@ -84,17 +100,20 @@ body {
 }
 
 .privacy-title {
+    font-family: 'Font-Contenido-bold';
     font-size: 99%;
     text-align: center;
     color: #555;
 }
 
 .privacy-text {
+    font-family: 'Font-Contenido';
     line-height: 1.6;
     color: #555;
 }
 
 .address-container {
+    font-family: 'Font-Contenido';
     margin-top: 7%;
     font-size: 1.3rem;
     text-align: center; 
