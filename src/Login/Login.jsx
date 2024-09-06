@@ -11,7 +11,7 @@ import rlceImage from '../Imagenes/rlce.webp';
 
 function Login(){
     return (<>
-
+<section class="layout_l">
 <div class="contenedorLogin">
         <div class="left">
             
@@ -20,6 +20,8 @@ function Login(){
         <img className='fachada' src={ivaiFachada}/>
         
         <img class="logo_ivai" src={ivaiImage}/>
+
+        
         
         
         </div>
@@ -27,7 +29,7 @@ function Login(){
         </div>
         <div class="right">    
 
-            <img src={rlceImage}></img>
+            <img src={rlceImage} className='img-right-l'></img>
 
             <p>Usuario</p>
             <input type="input" name="usuario"/>
@@ -36,7 +38,7 @@ function Login(){
 
             <input type="password" name="password"/>
 
-            <button className="btn_ingresar">Ingresar</button>
+            <button className="btn_ingresar">INGRESAR</button>
                 
 
 
@@ -49,9 +51,9 @@ function Login(){
         
     </div>
 
-    <div className="footer">
+    <div className="footer_l">
             
-            <div className="social-group">
+            <div className="social-group_l">
                 <a href="https://www.facebook.com/ivaiveracruz" target="_blank" rel="noopener noreferrer">
                 <img src={FacebookIcon} alt="Facebook" />
                 </a>
@@ -62,7 +64,7 @@ function Login(){
             </div>
 
             
-            <div className="social-group">
+            <div className="social-group_l">
                 <a href="https://x.com/VERIVAI" target="_blank" rel="noopener noreferrer">
                 <img src={TwitterIcon} alt="Twitter" />
                 </a>
@@ -73,7 +75,7 @@ function Login(){
             </div>
 
             
-            <div className="social-group">
+            <div className="social-group_l">
                 <a href="mailto:contacto@verivai.org.mx">
                 <img src={MailIcon} alt="Correo" />
                 </a>
@@ -81,7 +83,7 @@ function Login(){
             </div>
 
             
-            <div className="social-group">
+            <div className="social-group_l">
                 <a href="https://ivai.org.mx" target="_blank" rel="noopener noreferrer">
                 <img src={WebIcon} alt="Web" />
                 </a>
@@ -89,7 +91,7 @@ function Login(){
             </div>
             </div>
     
-    
+            </section>
     
     </>);
 

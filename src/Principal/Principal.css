@@ -9,10 +9,10 @@ body {
 }
 
 .layout {
-    flex: 1; /* Permite que el contenedor principal ocupe el espacio disponible */
-    display: grid;
-    grid-template-rows: auto 1fr auto; /* Configura las filas del grid */
-    grid-template-columns: 1fr;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor ocupe el 100% de la altura de la pantalla */
 }
 
 .header {
@@ -106,26 +106,17 @@ body {
 /*FOOTER*/
 
 .footer {
-    grid-row: 5; 
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #A35494;
     text-align: center;
     color: white;
-    width: 100%;
-    padding-top: 2.2vh;
-    padding-bottom: 2vh;   
-
-    height: 1rem;
-
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%;
-    position: relative;
-
-
 }
 
 .footer p {
