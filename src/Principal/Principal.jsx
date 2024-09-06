@@ -9,6 +9,8 @@ import MailIcon from '../assets/email.svg';
 import WebIcon from '../assets/web.svg';
 import CardInfo from '../Componentes/CardInfo';
 import Ubi from '../assets/ubi.svg'
+import PopupMSJConfirmacion from '../Componentes/PopupMSJConfirmacion'
+import RegistroMain from '../RegistroCursos/RegistroMain';
 
 function Principal() {
     return (
