@@ -5,18 +5,25 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe al menos la altura completa de la ventana */
+    min-height: 100vh; 
 }
 
 .layout {
+<<<<<<< HEAD
 
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Asegura que el contenedor ocupe el 100% de la altura de la pantalla */
+=======
+    flex: 1; 
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    grid-template-columns: 1fr;
+>>>>>>> 336d432d12696d95cc8e7d13601ba21a8aa597ee
 }
 
 .header {
-    grid-row: 1; /* Coloca el header en la primera fila del grid */
+    grid-row: 1; 
     background: #a35494;
     display: flex;
     justify-content: space-between; 
@@ -51,9 +58,9 @@ body {
     z-index: 1; 
 }
 
-.Main {
-    grid-row: 2; 
-    background: linear-gradient(#a35494, #FFFFFF 30%);
+.Main{
+    grid-row: 2;
+    background: linear-gradient(#A35494, #ffffff 30%);
     justify-content: center;
 }
 
@@ -88,24 +95,30 @@ body {
 
 .address-container {
     margin-top: 7%;
-    font-size: 130%;
+    font-size: 1.3rem;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    display: inline-flex;
     display: flex;
-    margin-left: 30%;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
 }
 
 .dir {
     color: #555;
-    margin: 0; 
-    margin-right: 10px; 
+    text-align: center; 
+    margin-right: 5px;
 }
+
 
 .imgUb {
-    width: 30px; 
-    height: auto; 
+    width: 2vw;
     filter: invert(20%) sepia(85%) saturate(1200%) hue-rotate(330deg) brightness(95%) contrast(90%);
+    vertical-align: middle;
 }
-
-
 
 
 /*FOOTER*/

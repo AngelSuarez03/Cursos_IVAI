@@ -72,6 +72,8 @@
    input{
     border: .1vh solid #A35494; 
     border-radius: 15px; 
+    padding-left: .5vw;
+    padding-right: .5vw;
     font-size: 1.5rem; 
     outline: none;
     margin-bottom: 1rem; 
