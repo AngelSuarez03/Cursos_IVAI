@@ -9,17 +9,14 @@ body {
 }
 
 .layout {
-<<<<<<< HEAD
 
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Asegura que el contenedor ocupe el 100% de la altura de la pantalla */
-=======
     flex: 1; 
     display: grid;
     grid-template-rows: auto 1fr auto; 
     grid-template-columns: 1fr;
->>>>>>> 336d432d12696d95cc8e7d13601ba21a8aa597ee
 }
 
 .header {
