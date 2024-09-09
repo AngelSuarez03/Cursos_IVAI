@@ -1,0 +1,24 @@
+.darken-background {
+    filter: brightness(0.5); /* Oscurece el fondo cuando el popup está activo */
+    transition: filter 0.3s ease;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 5vh;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro detrás del popup */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que el popup esté sobre todo lo demás */
+  }
+  
+  .popup-content {
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
