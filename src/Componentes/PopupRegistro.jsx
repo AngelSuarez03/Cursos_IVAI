@@ -1,21 +1,11 @@
 import { Button, Card, CardActions, CardContent, CardHeader, Typography, IconButton, Grid, TextField, Select, MenuItem, ToggleButton, ToggleButtonGroup, Switch, Stack } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
-import { useState } from 'react';
 
 
 function PopupRegistro(Props) {
 
-    const [toggleValue, setToggleValue] = useState('')
-
-    const handleToggleChange = (event, newValue) => {
-        if (newValue !== null) {
-            setToggleValue(newValue);
-        }
-    };
-
     return (
         <>
-            <Card variant="elevation" sx={{ maxWidth: '50%', maxHeight: '50%', backgroundColor: '#A35494', margin: 5, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
+            <Card variant="elevation" sx={{ maxWidth: 'auto', maxHeight: 'auto', backgroundColor: '#A35494', margin: 5, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
                 <CardHeader
                     sx={{ color: '#FFFFFF' }}
                     title={
