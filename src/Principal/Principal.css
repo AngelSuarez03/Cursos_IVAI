@@ -73,7 +73,7 @@ body {
 
 .Main{
     grid-row: 2;
-    background: linear-gradient(#A35494, #ffffff 30%);
+    background: linear-gradient(#A35494, #ffffff 20%);
     justify-content: center;
 }
 
@@ -83,11 +83,25 @@ body {
     overflow-y: scroll;
     max-width: 60%;
     scrollbar-width: none;
+}
+
+.BotonesAdmin {
+    margin-top: 10vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+    max-width: 1000%;
+    scrollbar-width: none;
     margin-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .IconoCard {
-    max-height: 30vh;
+    max-height: 20vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     filter: invert(45%) sepia(21%) saturate(1418%) hue-rotate(260deg) brightness(83%) contrast(82%);;
 }
 
@@ -114,7 +128,7 @@ body {
 
 .address-container {
     font-family: 'Font-Contenido';
-    margin-top: 7%;
+    margin-top: 10vh;
     font-size: 1.3rem;
     text-align: center; 
     margin-left: auto;
