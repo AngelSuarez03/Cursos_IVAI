@@ -14,7 +14,7 @@ function PopupRegistro(Props) {
 
     return (
         <>
-            <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '100%', backgroundColor: '#A35494', margin: 2, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
+            <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '100vh', backgroundColor: '#A35494', margin: 2, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
                 <CardHeader
                     sx={{ color: '#FFFFFF' }}
                     title={
@@ -42,7 +42,7 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Nombre(s)*:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF' }} />
+                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px' }} />
                             </Grid>
                         </Grid>
 
@@ -51,7 +51,7 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Apellidos*:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', marginTop: 1 }} />
+                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', marginTop: 1 , borderRadius: '10px'}} />
                             </Grid>
                         </Grid>
 
