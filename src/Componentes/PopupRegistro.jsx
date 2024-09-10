@@ -5,7 +5,7 @@ function PopupRegistro(Props) {
 
     return (
         <>
-            <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '100%', backgroundColor: '#A35494', margin: 5, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
+            <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '100%', backgroundColor: '#A35494', margin: 2, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
                 <CardHeader
                     sx={{ color: '#FFFFFF' }}
                     title={
@@ -25,7 +25,7 @@ function PopupRegistro(Props) {
                     }
                 />
 
-                <div style={{ overflowY: 'auto', maxHeight: '400px' }}>
+                <div style={{ overflowY: 'auto', maxHeight: '80vh' }}>
 
                     <CardContent sx={{ color: '#FFFFFF' }}>
                         <Grid container item xs={12} alignItems="center" spacing={2}>
