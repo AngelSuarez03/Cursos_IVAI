@@ -8,10 +8,19 @@ import WebIcon from '../assets/web.svg';
 import ivaiFachada from '../Imagenes/IVAI_Fachada.jpg';
 import ivaiImage from '../Imagenes/ivai.webp';
 import rlceImage from '../Imagenes/rlce.webp';
+import { Navigate, useNavigate } from 'react-router-dom';
+
+
+
 
 function Login() {
+    const navigate = useNavigate();
+
+    const verificarCredenciales = () => {
+        navigate('/RegistroCurso');
+    }
     return (<>
-        <section class="layout_l">
+        <section class="layout_l">  
             <div class="contenedorLogin">
                 <div class="left">
 
@@ -38,7 +47,7 @@ function Login() {
 
                     <input type="password" name="password" />
 
-                    <button className="btn_ingresar">INGRESAR</button>
+                    <button onClick={verificarCredenciales} className="btn_ingresar">INGRESAR</button>
 
 
 
