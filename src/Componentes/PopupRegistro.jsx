@@ -1,7 +1,16 @@
 import { Button, Card, CardActions, CardContent, CardHeader, Typography, IconButton, Grid, TextField, Select, MenuItem, ToggleButton, ToggleButtonGroup, Switch, Stack } from '@mui/material';
-
+import { useState } from 'react';
+import PopupMSJConfirmacion from './PopupMSJConfirmacion.jsx'
 
 function PopupRegistro(Props) {
+    
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const handleOpenConfirmation = () => {
+        setIsPopupOpen(true)
+    };
+    const handleCloseConfirmation = () => {
+        setIsPopupOpen(false)
+    };
 
     return (
         <>
@@ -204,9 +213,15 @@ function PopupRegistro(Props) {
                 </div>
 
                 <CardActions sx={{ justifyContent: 'center' }}>
-                    <Button variant="contained" sx={{ backgroundColor: '#E7B756', color: "#1E1E1E", marginTop: 2 }}>Enviar registro</Button>
+                    <Button onClick={handleOpenConfirmation} variant="contained" sx={{ backgroundColor: '#E7B756', color: "#1E1E1E", marginTop: 2 }}>Enviar registro</Button>
                 </CardActions>
             </Card>
+
+            {isPopupOpen && (
+                <div className="popup-overlay-inicio">
+                        <PopupMSJConfirmacion onClose={handleCloseConfirmation} />
+                </div>
+            )}
         </>
     )
 }
