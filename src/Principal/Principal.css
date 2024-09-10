@@ -9,8 +9,9 @@ body {
 }
 
 @font-face {
-    font-family: 'Font-Titulos';
-    src: url(../Fonts/Gotham-Black.otf) format('otf');
+    font-family: 'Font-Titulo';
+    src: url('../Fonts/Gotham-Black.otf') format('otf');
+    font-weight: normal;
 }
 
 @font-face {
@@ -62,7 +63,7 @@ body {
 }
 
 .header-title {
-    font-family: 'Font-Titulo', sans-serif;
+    font-family: 'Font-Titulo';
     flex: 1; 
     text-align: center; 
     color: white;

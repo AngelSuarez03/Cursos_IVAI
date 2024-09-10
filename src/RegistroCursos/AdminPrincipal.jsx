@@ -7,7 +7,6 @@ import TwitterIcon from '../assets/twitter-x.svg';
 import InstagramIcon from '../assets/instagram.svg';
 import MailIcon from '../assets/email.svg';
 import WebIcon from '../assets/web.svg';
-import CardInfo from '../Componentes/CardInfo';
 import Ubi from '../assets/ubi.svg'
 import RegistroMain from './RegistroMain';
 

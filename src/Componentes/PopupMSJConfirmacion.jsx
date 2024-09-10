@@ -2,7 +2,7 @@ import { Button, Card, CardActions, CardContent, SvgIcon, Typography } from "@mu
 import check from '../assets/check.svg'
 import '../Principal/Principal.css'
 
-function PopupMSJConfirmacion() {
+function PopupMSJConfirmacion( {onClose} ) {
     return (
         <>
             <Card variant="outlined" sx={{  maxWidth: '35%', minHeight: 500, borderRadius:5 }}>
@@ -13,7 +13,7 @@ function PopupMSJConfirmacion() {
                     <Typography sx={{ marginTop:3 }} variant="body2">El proceso se ha realizado correctamente.Le hemos enviado un correo electrónico con el enlace de acceso, favor de verificar todas las bandejas del correo electrónico</Typography>
                 </CardContent>
                 <CardActions sx={{ justifyContent:'center' }}>
-                    <Button sx={{ backgroundColor: '#E7B756', color:'#1E1E1E', minWidth:150 }} variant="contained">Aceptar</Button>
+                    <Button onClick={onClose} sx={{ backgroundColor: '#E7B756', color:'#1E1E1E', minWidth:150 }} variant="contained">Aceptar</Button>
                 </CardActions>
 
             </Card>
