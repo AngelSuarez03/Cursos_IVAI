@@ -1,5 +1,5 @@
 import { Button, Card, CardActions, CardContent, CardHeader, Typography, IconButton, Grid, TextField, Select, MenuItem, ToggleButton, ToggleButtonGroup, Switch, Stack } from '@mui/material';
-
+import BackIcon from '../assets/arrow.svg';
 
 function PopupRegistro(Props) {
 
