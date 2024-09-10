@@ -2,24 +2,29 @@
     border-radius: 20px;
     background-color: #A35494;
     border: #E8ABCE solid 1px ;
-    padding: 2vh;
+    padding-top: 2vh;
 }
 
 .header_Select{
     color: white;
 
-    padding-left: 8vh;
+    padding-left: 5vh;
   }
   .footer_Select {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    text-align: center;
-    padding: 2vh;
+    padding-top: 2vh;
+    padding-right: 5vh;
+    height: 100%;
+
   }
   
   .main_Select {
     flex-grow: 1;
-    padding: 2rem;
-    margin: auto;
+    padding-bottom: 3.5vh;
     max-height: 60vh;
     overflow-y: scroll;
     max-width: 100%;
@@ -27,13 +32,10 @@
   }
   
   .footer_Select {
-    margin-top: auto;
+    margin-top: 5vh;
   }
 
   .boton_Modificar{
     background-color:#E7B756 ;
     color: white;
-    padding: 1vh;
-
-
   }

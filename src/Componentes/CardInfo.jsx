@@ -28,10 +28,8 @@ function CardInfo(Props) {
             </Card>
 
             {isPopupOpen && (
-                <div className="popup-overlay">
-                    <div className="popup-content">
+                <div className="popup-overlay-inicio">
                         <PopupRegistro onClose={handleClosePopup} />
-                    </div>
                 </div>
             )}
 
