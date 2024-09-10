@@ -1,6 +1,7 @@
 import { Button, Card, CardActions, CardContent, CardHeader, Typography, IconButton, Grid, TextField, Select, MenuItem, ToggleButton, ToggleButtonGroup, Switch, Stack } from '@mui/material';
 import { useState } from 'react';
 import PopupMSJConfirmacion from './PopupMSJConfirmacion.jsx'
+import '../Principal/Principal.css'
 
 function PopupRegistro(Props) {
     
@@ -34,7 +35,7 @@ function PopupRegistro(Props) {
                     }
                 />
 
-                <div style={{ overflowY: 'auto', maxHeight: '400px' }}>
+                <div className='ScrollRegistro'>
 
                     <CardContent sx={{ color: '#FFFFFF' }}>
                         <Grid container item xs={12} alignItems="center" spacing={2}>

@@ -106,6 +106,15 @@ body {
     filter: invert(45%) sepia(21%) saturate(1418%) hue-rotate(260deg) brightness(83%) contrast(82%);;
 }
 
+.ScrollRegistro {
+    overflow: scroll;
+    max-height: 70vh;
+}
+
+.ScrollRegistro::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 .privacy-notice {
     font-size: 80%;
     grid-row: 4; 
