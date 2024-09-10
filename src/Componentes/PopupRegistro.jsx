@@ -1,11 +1,20 @@
 import { Button, Card, CardActions, CardContent, CardHeader, Typography, IconButton, Grid, TextField, Select, MenuItem, ToggleButton, ToggleButtonGroup, Switch, Stack } from '@mui/material';
-import BackIcon from '../assets/arrow.svg';
+import { useState } from 'react';
+import PopupMSJConfirmacion from './PopupMSJConfirmacion.jsx'
 
 function PopupRegistro(Props) {
+    
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const handleOpenConfirmation = () => {
+        setIsPopupOpen(true)
+    };
+    const handleCloseConfirmation = () => {
+        setIsPopupOpen(false)
+    };
 
     return (
         <>
-            <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '100%', backgroundColor: '#A35494', margin: 5, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
+            <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '100%', backgroundColor: '#A35494', margin: 2, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
                 <CardHeader
                     sx={{ color: '#FFFFFF' }}
                     title={
@@ -25,7 +34,7 @@ function PopupRegistro(Props) {
                     }
                 />
 
-                <div style={{ overflowY: 'auto', maxHeight: '400px' }}>
+                <div style={{ overflowY: 'auto', maxHeight: '80vh' }}>
 
                     <CardContent sx={{ color: '#FFFFFF' }}>
                         <Grid container item xs={12} alignItems="center" spacing={2}>
@@ -204,9 +213,15 @@ function PopupRegistro(Props) {
                 </div>
 
                 <CardActions sx={{ justifyContent: 'center' }}>
-                    <Button variant="contained" sx={{ backgroundColor: '#E7B756', color: "#1E1E1E", marginTop: 2 }}>Enviar registro</Button>
+                    <Button onClick={handleOpenConfirmation} variant="contained" sx={{ backgroundColor: '#E7B756', color: "#1E1E1E", marginTop: 2 }}>Enviar registro</Button>
                 </CardActions>
             </Card>
+
+            {isPopupOpen && (
+                <div className="popup-overlay-inicio">
+                        <PopupMSJConfirmacion onClose={handleCloseConfirmation} />
+                </div>
+            )}
         </>
     )
 }
