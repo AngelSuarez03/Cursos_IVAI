@@ -11,8 +11,11 @@ import CardInfo from '../Componentes/CardInfo';
 import Ubi from '../assets/ubi.svg'
 import PopupMSJConfirmacion from '../Componentes/PopupMSJConfirmacion'
 import RegistroMain from '../RegistroCursos/RegistroMain';
+import { useState } from 'react';
+
 
 function Principal() {
+
     return (
         <>
             <section class="layout">
@@ -25,15 +28,15 @@ function Principal() {
                 </div>
                 <div className='Main'>
                     <div className='InfoCursos'>
-                        
                         <CardInfo NombreCurso="Capacitación: “Archivos: Datos personales y Acceso a la informacion: un vínculo normativo” ---> 24/09/2024" FechaCurso="19/09/2024" LugarCurso="Virtual" ExpositorCurso="Dirección de Archivos" HoraCurso="11:00" TextoBoton="Ver Disponibilidad" />
                         <CardInfo NombreCurso="Capacitación: “Archivos: Datos personales y Acceso a la informacion: un vínculo normativo” ---> 24/09/2024" FechaCurso="19/09/2024" LugarCurso="Virtual" ExpositorCurso="Dirección de Archivos" HoraCurso="11:00" TextoBoton="Ver Disponibilidad" />
                         <CardInfo NombreCurso="Capacitación: “Archivos: Datos personales y Acceso a la informacion: un vínculo normativo” ---> 24/09/2024" FechaCurso="19/09/2024" LugarCurso="Virtual" ExpositorCurso="Dirección de Archivos" HoraCurso="11:00" TextoBoton="Ver Disponibilidad" />
                         <CardInfo NombreCurso="Capacitación: “Archivos: Datos personales y Acceso a la informacion: un vínculo normativo” ---> 24/09/2024" FechaCurso="19/09/2024" LugarCurso="Virtual" ExpositorCurso="Dirección de Archivos" HoraCurso="11:00" TextoBoton="Ver Disponibilidad" />
                         <CardInfo NombreCurso="Capacitación: “Archivos: Datos personales y Acceso a la informacion: un vínculo normativo” ---> 24/09/2024" FechaCurso="19/09/2024" LugarCurso="Virtual" ExpositorCurso="Dirección de Archivos" HoraCurso="11:00" TextoBoton="Ver Disponibilidad" />
                         <CardInfo NombreCurso="Capacitación: “Archivos: Datos personales y Acceso a la informacion: un vínculo normativo” ---> 24/09/2024" FechaCurso="19/09/2024" LugarCurso="Virtual" ExpositorCurso="Dirección de Archivos" HoraCurso="11:00" TextoBoton="Ver Disponibilidad" />
-                    
                     </div>
+
+
                     <div className="privacy-notice">
                         <h2 className="privacy-title">
                             AVISO DE PRIVACIDAD SIMPLIFICADO DE CAPACITACIONES O EVENTOS PRESENCIALES.
@@ -43,7 +46,7 @@ function Principal() {
                         </p>
                         <div className="address-container">
                             <p className="dir">
-                                Calle Guadalupeee Victoria #7, Zona Centro, C.P. 91000, Xalapa, Veracruz.
+                                Calle Guadalupe Victoria #7, Zona Centro, C.P. 91000, Xalapa, Veracruz.
                             </p>
                             <a href="https://maps.app.goo.gl/q4NLaByuVnYCrV9RA" target="_blank" rel="noopener noreferrer">
                                 <img className="imgUb" src={Ubi} alt="Ubicación" />
@@ -95,6 +98,7 @@ function Principal() {
                 </div>
 
             </section>
+
         </>
     );
 }
