@@ -37,7 +37,7 @@ function RegistroMain() {
   
 
         {isPopupOpen && (
-          <div className="popup-overlay" onClick={handleClosePopup}>
+          <div className="popup-overlay">
             <div className="popup-content">
               <SelectCurso onClose={handleClosePopup} /> 
             </div>
