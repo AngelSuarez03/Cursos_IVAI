@@ -20,6 +20,7 @@ function PopupRegistro(Props) {
                     sx={{ color: '#FFFFFF' }}
                     title={
                         <Grid container justifyContent="space-between" alignItems="flex-start">
+                            
                             <Grid item>
                                 <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginBottom: 0 }}>
                                     Datos Personales
@@ -201,9 +202,9 @@ function PopupRegistro(Props) {
                             <Grid item xs={6}>
                                 <Grid item>
                                     <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
-                                        <Typography>Sí</Typography>
-                                        <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
                                         <Typography>No</Typography>
+                                        <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
+                                        <Typography>Sí</Typography>
                                     </Stack>
                                 </Grid>
                             </Grid>
@@ -240,9 +241,9 @@ function PopupRegistro(Props) {
                             <Grid item xs={6}>
                                 <Grid item>
                                     <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
-                                        <Typography>Sí</Typography>
-                                        <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
                                         <Typography>No</Typography>
+                                        <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
+                                        <Typography>Sí</Typography>
                                     </Stack>
                                 </Grid>
                             </Grid>
