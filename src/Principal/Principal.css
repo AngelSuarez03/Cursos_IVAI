@@ -81,9 +81,12 @@ body {
 .InfoCursos {
     margin: auto;
     max-height: 100vh;
-    overflow-y: scroll;
+    overflow-y: hidden;
     max-width: 60%;
-    scrollbar-width: none;
+}
+
+.InfoCursos:hover {
+    overflow-y: scroll;
 }
 
 .BotonesAdmin {
