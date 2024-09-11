@@ -57,10 +57,12 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Apellidos*:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', marginTop: 1, borderRadius: '15px',
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', marginTop: 1, borderRadius: '15px',
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '15px',
-                                    } }} />
+                                    }
+                                }} />
                             </Grid>
                         </Grid>
 
@@ -74,10 +76,12 @@ function PopupRegistro(Props) {
                                     fullWidth
                                     variant="outlined"
                                     size="small"
-                                    sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                    sx={{
+                                        backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                         '& .MuiOutlinedInput-root': {
                                             borderRadius: '15px',
-                                        } }}
+                                        }
+                                    }}
                                     defaultValue=""
                                 >
                                     <MenuItem value="Aula 1">Aula 1</MenuItem>
@@ -92,10 +96,12 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Lugar de procedencia:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '15px',
-                                    } }} />
+                                    }
+                                }} />
                             </Grid>
                         </Grid>
 
@@ -108,10 +114,12 @@ function PopupRegistro(Props) {
                                     fullWidth
                                     variant="outlined"
                                     size="small"
-                                    sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                    sx={{
+                                        backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                         '& .MuiOutlinedInput-root': {
                                             borderRadius: '15px',
-                                        } }}
+                                        }
+                                    }}
                                     defaultValue=""
                                 >
                                     <MenuItem value="">
@@ -133,10 +141,12 @@ function PopupRegistro(Props) {
                                     fullWidth
                                     variant="outlined"
                                     size="small"
-                                    sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                    sx={{
+                                        backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                         '& .MuiOutlinedInput-root': {
                                             borderRadius: '15px',
-                                        } }}
+                                        }
+                                    }}
                                     defaultValue=""
                                 >
                                     <MenuItem value="Aula 1">Aula 1</MenuItem>
@@ -151,10 +161,12 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Estado:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '15px',
-                                    } }} />
+                                    }
+                                }} />
                             </Grid>
                         </Grid>
 
@@ -163,10 +175,12 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Nombre de la entidad o dependencia:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '15px',
-                                    } }} />
+                                    }
+                                }} />
                             </Grid>
                         </Grid>
 
@@ -175,10 +189,12 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Área de adquisición:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '15px',
-                                    } }} />
+                                    }
+                                }} />
                             </Grid>
                         </Grid>
 
@@ -187,10 +203,12 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Cargo público que desempeña:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '15px',
-                                    } }} />
+                                    }
+                                }} />
                             </Grid>
                         </Grid>
 
@@ -202,7 +220,20 @@ function PopupRegistro(Props) {
                                 <Grid item>
                                     <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
                                         <Typography>Sí</Typography>
-                                        <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
+                                        <Switch defaultChecked sx={{
+                                            '& .MuiSwitch-switchBase': {
+                                                color: '#BABABA', 
+                                            },
+                                            '& .MuiSwitch-switchBase.Mui-checked': {
+                                                color: '#FFFFFF', 
+                                            },
+                                            '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+                                                backgroundColor: '#E8ABCE', 
+                                            },
+                                            '& .MuiSwitch-track': {
+                                                backgroundColor: '#E8ABCE', 
+                                            },
+                                        }} inputProps={{ 'aria-label': 'ant design' }} />
                                         <Typography>No</Typography>
                                     </Stack>
                                 </Grid>
@@ -214,10 +245,12 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Correo electrónico institucional*:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '15px',
-                                    }}} />
+                                    }
+                                }} />
                             </Grid>
                         </Grid>
 
@@ -226,10 +259,12 @@ function PopupRegistro(Props) {
                                 <Typography variant="body2">Telefono institucional*:</Typography>
                             </Grid>
                             <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{ backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
                                     '& .MuiOutlinedInput-root': {
                                         borderRadius: '15px',
-                                    }}} />
+                                    }
+                                }} />
                             </Grid>
                         </Grid>
 
@@ -241,7 +276,20 @@ function PopupRegistro(Props) {
                                 <Grid item>
                                     <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
                                         <Typography>Sí</Typography>
-                                        <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
+                                        <Switch sx={{
+                                            '& .MuiSwitch-switchBase': {
+                                                color: '#BABABA', 
+                                            },
+                                            '& .MuiSwitch-switchBase.Mui-checked': {
+                                                color: '#FFFFFF', 
+                                            },
+                                            '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+                                                backgroundColor: '#E8ABCE', 
+                                            },
+                                            '& .MuiSwitch-track': {
+                                                backgroundColor: '#E8ABCE', 
+                                            },
+                                        }} inputProps={{ 'aria-label': 'ant design' }} />
                                         <Typography>No</Typography>
                                     </Stack>
                                 </Grid>
