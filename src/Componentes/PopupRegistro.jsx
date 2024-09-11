@@ -84,9 +84,15 @@ function PopupRegistro(Props) {
                                     }}
                                     defaultValue=""
                                 >
-                                    <MenuItem value="Aula 1">Aula 1</MenuItem>
-                                    <MenuItem value="Aula 2">Aula 2</MenuItem>
-                                    <MenuItem value="Sala de conferencias">Sala de conferencias</MenuItem>
+                                    <MenuItem value='Sin Estudios'>Sin Estudios</MenuItem>
+                                    <MenuItem value="Primaria">Primaria</MenuItem>
+                                    <MenuItem value="Secundaria">Secundaria</MenuItem>
+                                    <MenuItem value="Preparatoria">Preparatoria</MenuItem>
+                                    <MenuItem value="Licenciatura">Licenciatura</MenuItem>
+                                    <MenuItem value="Tsu">Técnico Superior Universitario</MenuItem>
+                                    <MenuItem value="Maestria">Maestría</MenuItem>
+                                    <MenuItem value="Doctorado">Doctorado</MenuItem>
+                                    
                                 </Select>
                             </Grid>
                         </Grid>
@@ -122,12 +128,9 @@ function PopupRegistro(Props) {
                                     }}
                                     defaultValue=""
                                 >
-                                    <MenuItem value="">
-                                        <em>Seleccionar lugar</em>
-                                    </MenuItem>
-                                    <MenuItem value="Aula 1">Aula 1</MenuItem>
-                                    <MenuItem value="Aula 2">Aula 2</MenuItem>
-                                    <MenuItem value="Sala de conferencias">Sala de conferencias</MenuItem>
+                                    <MenuItem value="Federal">Federal</MenuItem>
+                                    <MenuItem value="Estatal">Estatal</MenuItem>
+                                    <MenuItem value="Municipal">Municipal</MenuItem>
                                 </Select>
                             </Grid>
                         </Grid>
@@ -149,9 +152,9 @@ function PopupRegistro(Props) {
                                     }}
                                     defaultValue=""
                                 >
-                                    <MenuItem value="Aula 1">Aula 1</MenuItem>
-                                    <MenuItem value="Aula 2">Aula 2</MenuItem>
-                                    <MenuItem value="Sala de conferencias">Sala de conferencias</MenuItem>
+                                    <MenuItem value="Masculino">Masculino</MenuItem>
+                                    <MenuItem value="Femenino">Femenino</MenuItem>
+                                    <MenuItem value="No Especificado">Prefiero no Especificar</MenuItem>
                                 </Select>
                             </Grid>
                         </Grid>
@@ -219,22 +222,22 @@ function PopupRegistro(Props) {
                             <Grid item xs={6}>
                                 <Grid item>
                                     <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
-                                        <Typography>Sí</Typography>
+                                        <Typography>No</Typography>
                                         <Switch defaultChecked sx={{
                                             '& .MuiSwitch-switchBase': {
-                                                color: '#BABABA', 
+                                                color: '#BABABA',
                                             },
                                             '& .MuiSwitch-switchBase.Mui-checked': {
-                                                color: '#FFFFFF', 
+                                                color: '#FFFFFF',
                                             },
                                             '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-                                                backgroundColor: '#E8ABCE', 
+                                                backgroundColor: '#E8ABCE',
                                             },
                                             '& .MuiSwitch-track': {
-                                                backgroundColor: '#E8ABCE', 
+                                                backgroundColor: '#E8ABCE',
                                             },
                                         }} inputProps={{ 'aria-label': 'ant design' }} />
-                                        <Typography>No</Typography>
+                                        <Typography>Si</Typography>
                                     </Stack>
                                 </Grid>
                             </Grid>
@@ -275,22 +278,22 @@ function PopupRegistro(Props) {
                             <Grid item xs={6}>
                                 <Grid item>
                                     <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
-                                        <Typography>Sí</Typography>
+                                        <Typography>No</Typography>
                                         <Switch sx={{
                                             '& .MuiSwitch-switchBase': {
-                                                color: '#BABABA', 
+                                                color: '#BABABA',
                                             },
                                             '& .MuiSwitch-switchBase.Mui-checked': {
-                                                color: '#FFFFFF', 
+                                                color: '#FFFFFF',
                                             },
                                             '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-                                                backgroundColor: '#E8ABCE', 
+                                                backgroundColor: '#E8ABCE',
                                             },
                                             '& .MuiSwitch-track': {
-                                                backgroundColor: '#E8ABCE', 
+                                                backgroundColor: '#E8ABCE',
                                             },
                                         }} inputProps={{ 'aria-label': 'ant design' }} />
-                                        <Typography>No</Typography>
+                                        <Typography>Si</Typography>
                                     </Stack>
                                 </Grid>
                             </Grid>
