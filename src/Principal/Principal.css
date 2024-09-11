@@ -107,6 +107,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     filter: invert(45%) sepia(21%) saturate(1418%) hue-rotate(260deg) brightness(83%) contrast(82%);;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .ScrollRegistro {
@@ -130,6 +132,12 @@ body {
   
   .ScrollRegistro::-webkit-scrollbar-thumb:hover {
     background-color: #E8ABFF;
+  }
+
+  .IconoSalir {
+    width: 6vw;
+    height: 6vh;
+    filter: invert(100%) sepia(1%) saturate(7482%) hue-rotate(145deg) brightness(107%) contrast(100%);
   }
 
 .privacy-notice {
