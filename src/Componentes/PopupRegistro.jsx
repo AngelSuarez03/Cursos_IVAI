@@ -21,15 +21,21 @@ function PopupRegistro(Props) {
                     sx={{ color: '#FFFFFF' }}
                     title={
                         <Grid container justifyContent="space-between" alignItems="flex-start">
-                            <Grid item>
+
+                            <div className='Salir'>
+                                <img src={Arrow} alt="Web" class="responsive-image" />
+                                <p>Salir</p>
+                            </div>
+
+                            {/* <Grid item>s
                                 <img src={Arrow} alt="Web" className='IconoSalir' />
                             </Grid>
-                            <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginLeft:-30}}>
+                            <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginLeft: -30, maxWidth: 'auto', maxHeight: 'auto' }}>
                                 Salir
-                            </Typography>
+                            </Typography> */}
 
                             <Grid item>
-                                <Typography variant="body2" sx={{ maxWidth: 'auto', maxHeight: 'auto', color: '#FFFFFF',fontSize: '50%' }}>
+                                <Typography variant="body2" sx={{ maxWidth: 'auto', maxHeight: 'auto', color: '#FFFFFF', fontSize: '50%' }}>
                                     Los campos marcados con <br />
                                     asterisco (*) son obligatorios
                                 </Typography>
@@ -38,7 +44,7 @@ function PopupRegistro(Props) {
                     }
                 />
 
-                <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginBottom: 0, textAlign:'center',  maxWidth: 'auto', maxHeight: 'auto' }}>
+                <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginBottom: 0, textAlign: 'center', maxWidth: 'auto', maxHeight: 'auto' }}>
                     Datos Personales
                 </Typography>
 
