@@ -1,12 +1,9 @@
-.darken-background {
-    filter: brightness(0.5); 
-    transition: filter 0.3s ease;
-  }
+
   
   .popup-overlay {
     position: fixed;
     top: 0;
-    left:0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     padding-bottom: 5vh;
@@ -15,44 +12,93 @@
     justify-content: center;
     align-items: center;
     z-index: 1000; 
-  }
-  
-  .popup-content {
+}
+
+.popup-content {
     border-radius: 10px;
     width: 60%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .popup-overlay-inicio {
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; 
-  }
-  
-  .popup-content-inicio {
-    border-radius: 10px;
-    width: 50%;
-    margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10vh;
-  }
-
-  .popup{
-
-    border-radius: 10px;
-    width: 50%;
-    height: 100vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
-    
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
-  }
+.popup-content.open {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup-content.close {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.popup-overlay-inicio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 5vh;
+  background: rgba(0, 0, 0, 0); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.popup-content-inicio {
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup-content-inicio.open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-content-inicio.close {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.popup-overlay-confirmacion {
+  position: fixed;
+  top: -10vh;
+  left: -20vw;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 5vh;
+  background: rgba(0, 0, 0, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.popup-content-confirmacion {
+  border-radius: 10px;
+  width: 60%;
+  padding-left: 39vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup-content-confirmacion.open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-content-confirmacion.close {
+  opacity: 0;
+  transform: scale(0.9);
+}
 
 
   

@@ -6,11 +6,22 @@ import '../Principal/Principal.css'
 function PopupRegistro(Props) {
 
     const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
+
     const handleOpenConfirmation = () => {
-        setIsPopupOpen(true)
+      setIsPopupOpen(true);
+      setTimeout(() => {
+        setIsAnimating(true); 
+      }, 0);
     };
+
     const handleCloseConfirmation = () => {
-        setIsPopupOpen(false)
+      setIsAnimating(false); 
+      
+      setTimeout(() => {
+        setIsPopupOpen(false);
+        onClose(); // Cierra también el popup de registro
+      }, 300); 
     };
 
     return (
@@ -252,15 +263,18 @@ function PopupRegistro(Props) {
                 </div>
 
                 <CardActions sx={{ justifyContent: 'center' }}>
-                    <Button onClick={handleOpenConfirmation} variant="contained" sx={{ backgroundColor: '#E7B756', color: "#1E1E1E", marginTop: 2 }}>Enviar registro</Button>
+                <Button onClick={handleOpenConfirmation} variant="contained" sx={{ backgroundColor: '#E7B756', color: "#1E1E1E", marginTop: 2 }}>Enviar registro</Button>
                 </CardActions>
             </Card>
 
             {isPopupOpen && (
-                <div className="popup-overlay-inicio">
+              <div className="popup-overlay-confirmacion">
+                <div className={`popup-content-confirmacion ${isAnimating ? 'open' : 'close'}`}>
                     <PopupMSJConfirmacion onClose={handleCloseConfirmation} />
                 </div>
+              </div>
             )}
+
         </>
     )
 }

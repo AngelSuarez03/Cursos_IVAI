@@ -4,7 +4,7 @@ import { Button, Card, CardActions, CardContent, CardHeader, Typography } from "
 function CardModificar(Props) {
     return (
         <>
-            <Card variant="elevation" sx={{ maxWidth:'90%', maxHeight: '60%', backgroundColor: '#FFFFF', margin:5, alignItems:'center',justifyContent:'center', borderRadius:5 }}>
+            <Card variant="elevation" sx={{ maxWidth:'100%', maxHeight: '60%', backgroundColor: '#FFFFF', marginTop:2,marginLeft:5,marginRight:5, alignItems:'center',justifyContent:'center', borderRadius:5 }}>
                 <CardHeader sx={{ color: '#A35494', marginLeft:2 }} title={Props.NombreCurso} />
                 <CardContent sx={{ color: '#A35494', marginLeft: 2, marginTop:-3}}>
                     <Typography variant="body2">Persona que imparte el curso : {Props.ExpositorCurso}</Typography>

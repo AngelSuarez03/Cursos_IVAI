@@ -29,6 +29,7 @@
     overflow-y: scroll;
     max-width: 100%;
     scrollbar-width: none;
+    padding: 2vh;
   }
   
   .footer_Select {
