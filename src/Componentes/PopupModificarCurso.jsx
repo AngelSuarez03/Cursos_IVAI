@@ -1,10 +1,10 @@
 import { Button, Card, CardActions, CardContent, CardHeader, Typography, IconButton, Grid, TextField, Select, MenuItem, ToggleButton, ToggleButtonGroup, Switch, Stack, Grid2 } from '@mui/material';
 import { useState } from 'react';
-import PopupMSJConfirmacion from './PopupMSJConfirmacion.jsx'
+import PopupMSJGuardado from './PopupMSJGuardado.jsx'
 import Arrow from '../assets/arrow.svg'
 import '../Principal/Principal.css'
 
-function PopupRegistro({ onClose }) {
+function PopupModificarCurso({ onClose }) {
 
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
@@ -21,13 +21,13 @@ function PopupRegistro({ onClose }) {
       
       setTimeout(() => {
         setIsPopupOpen(false);
-        onClose(); // Cierra también el popup de registro
+        onClose(); 
       }, 300); 
     };
 
     return (
         <>
-            <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '100vh', backgroundColor: '#A35494', margin: 2, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
+            <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '100vh', backgroundColor: '#A35494', margin: '7vh', justifyContent: 'center', borderRadius: 5, padding: '3vh', marginTop: '20vh' }}>
                 <CardHeader
                     sx={{ color: '#FFFFFF' }}
                     title={
@@ -35,7 +35,7 @@ function PopupRegistro({ onClose }) {
                             <Grid item>
                                 <img src={Arrow} alt="Web" className='IconoSalir' onClick={onClose}/>
                             </Grid>
-                            <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginLeft:-30}}>
+                            <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold'}}>
                                 Salir
                             </Typography>
 
@@ -50,7 +50,7 @@ function PopupRegistro({ onClose }) {
                 />
 
                 <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginBottom: 0, textAlign:'center',  maxWidth: 'auto', maxHeight: 'auto' }}>
-                    Datos Personales
+                    Modificar Curso
                 </Typography>
 
                 <div className='ScrollRegistro'>
@@ -58,7 +58,7 @@ function PopupRegistro({ onClose }) {
                     <CardContent sx={{ color: '#FFFFFF' }}>
                         <Grid container item xs={12} alignItems="center" spacing={2}>
                             <Grid item xs={6}>
-                                <Typography variant="body2">Nombre(s)*:</Typography>
+                                <Typography variant="body2">Nombre del curso:</Typography>
                             </Grid>
                             <Grid item xs={6}>
                                 <TextField fullWidth variant='outlined' size="small" sx={{
@@ -72,7 +72,7 @@ function PopupRegistro({ onClose }) {
 
                         <Grid container item xs={12} alignItems="center" spacing={2}>
                             <Grid item xs={6}>
-                                <Typography variant="body2">Apellidos*:</Typography>
+                                <Typography variant="body2">Fecha:</Typography>
                             </Grid>
                             <Grid item xs={6}>
                                 <TextField fullWidth variant="outlined" size="small" sx={{
@@ -87,31 +87,7 @@ function PopupRegistro({ onClose }) {
 
                         <Grid container item xs={12} alignItems="center" spacing={2}>
                             <Grid item xs={6}>
-                                <Typography variant="body2">Ultimo grado de estudios:</Typography>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <Select
-                                    fullWidth
-                                    variant="outlined"
-                                    size="small"
-                                    sx={{
-                                        backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
-                                        '& .MuiOutlinedInput-root': {
-                                            borderRadius: '15px',
-                                        }
-                                    }}
-                                    defaultValue=""
-                                >
-                                    <MenuItem value="Aula 1">Aula 1</MenuItem>
-                                    <MenuItem value="Aula 2">Aula 2</MenuItem>
-                                    <MenuItem value="Sala de conferencias">Sala de conferencias</MenuItem>
-                                </Select>
-                            </Grid>
-                        </Grid>
-
-                        <Grid container item xs={12} alignItems="center" spacing={2}>
-                            <Grid item xs={6}>
-                                <Typography variant="body2">Lugar de procedencia:</Typography>
+                                <Typography variant="body2">Hora:</Typography>
                             </Grid>
                             <Grid item xs={6}>
                                 <TextField fullWidth variant="outlined" size="small" sx={{
@@ -125,7 +101,49 @@ function PopupRegistro({ onClose }) {
 
                         <Grid container item xs={12} alignItems="center" spacing={2}>
                             <Grid item xs={6}>
-                                <Typography variant="body2">Orden de gobierno:</Typography>
+                                <Typography variant="body2">Persona que imparte el curso:</Typography>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                    '& .MuiOutlinedInput-root': {
+                                        borderRadius: '15px',
+                                    }
+                                }} />
+                            </Grid>
+                        </Grid>
+
+                        <Grid container item xs={12} alignItems="center" spacing={2}>
+                            <Grid item xs={6}>
+                                <Typography variant="body2">Lugares Disponibles:</Typography>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                    '& .MuiOutlinedInput-root': {
+                                        borderRadius: '15px',
+                                    }
+                                }} />
+                            </Grid>
+                        </Grid>
+
+                        <Grid container item xs={12} alignItems="center" spacing={2}>
+                            <Grid item xs={6}>
+                                <Typography variant="body2">Correo de seguimiento:</Typography>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <TextField fullWidth variant="outlined" size="small" sx={{
+                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                    '& .MuiOutlinedInput-root': {
+                                        borderRadius: '15px',
+                                    }
+                                }} />
+                            </Grid>
+                        </Grid>
+
+                        <Grid container item xs={12} alignItems="center" spacing={2}>
+                            <Grid item xs={6}>
+                                <Typography variant="body2">Estatus:</Typography>
                             </Grid>
                             <Grid item xs={6}>
                                 <Select
@@ -152,7 +170,7 @@ function PopupRegistro({ onClose }) {
 
                         <Grid container item xs={12} alignItems="center" spacing={2}>
                             <Grid item xs={6}>
-                                <Typography variant="body2">Sexo:</Typography>
+                                <Typography variant="body2">Tipo de curso:</Typography>
                             </Grid>
                             <Grid item xs={6}>
                                 <Select
@@ -176,7 +194,31 @@ function PopupRegistro({ onClose }) {
 
                         <Grid container item xs={12} alignItems="center" spacing={2}>
                             <Grid item xs={6}>
-                                <Typography variant="body2">Estado:</Typography>
+                                <Typography variant="body2">Curso:</Typography>
+                            </Grid>
+                            <Grid item xs={6}>
+                                <Select
+                                    fullWidth
+                                    variant="outlined"
+                                    size="small"
+                                    sx={{
+                                        backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
+                                        '& .MuiOutlinedInput-root': {
+                                            borderRadius: '15px',
+                                        }
+                                    }}
+                                    defaultValue=""
+                                >
+                                    <MenuItem value="Aula 1">Aula 1</MenuItem>
+                                    <MenuItem value="Aula 2">Aula 2</MenuItem>
+                                    <MenuItem value="Sala de conferencias">Sala de conferencias</MenuItem>
+                                </Select>
+                            </Grid>
+                        </Grid>
+
+                        <Grid container item xs={12} alignItems="center" spacing={2}>
+                            <Grid item xs={6}>
+                                <Typography variant="body2">Liga de Teams:</Typography>
                             </Grid>
                             <Grid item xs={6}>
                                 <TextField fullWidth variant="outlined" size="small" sx={{
@@ -190,7 +232,7 @@ function PopupRegistro({ onClose }) {
 
                         <Grid container item xs={12} alignItems="center" spacing={2}>
                             <Grid item xs={6}>
-                                <Typography variant="body2">Nombre de la entidad o dependencia:</Typography>
+                                <Typography variant="body2">Valor curricular en horas:</Typography>
                             </Grid>
                             <Grid item xs={6}>
                                 <TextField fullWidth variant="outlined" size="small" sx={{
@@ -199,92 +241,6 @@ function PopupRegistro({ onClose }) {
                                         borderRadius: '15px',
                                     }
                                 }} />
-                            </Grid>
-                        </Grid>
-
-                        <Grid container item xs={12} alignItems="center" spacing={2}>
-                            <Grid item xs={6}>
-                                <Typography variant="body2">Área de adquisición:</Typography>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{
-                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
-                                    '& .MuiOutlinedInput-root': {
-                                        borderRadius: '15px',
-                                    }
-                                }} />
-                            </Grid>
-                        </Grid>
-
-                        <Grid container item xs={12} alignItems="center" spacing={2}>
-                            <Grid item xs={6}>
-                                <Typography variant="body2">Cargo público que desempeña:</Typography>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{
-                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
-                                    '& .MuiOutlinedInput-root': {
-                                        borderRadius: '15px',
-                                    }
-                                }} />
-                            </Grid>
-                        </Grid>
-
-                        <Grid container item xs={12} alignItems="center" spacing={2}>
-                            <Grid item xs={6}>
-                                <Typography variant="body2">¿Desea recibir información de nuestros eventos?</Typography>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <Grid item>
-                                    <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
-                                        <Typography>No</Typography>
-                                        <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
-                                        <Typography>Sí</Typography>
-                                    </Stack>
-                                </Grid>
-                            </Grid>
-                        </Grid>
-
-                        <Grid container item xs={12} alignItems="center" spacing={2}>
-                            <Grid item xs={6}>
-                                <Typography variant="body2">Correo electrónico institucional*:</Typography>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{
-                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
-                                    '& .MuiOutlinedInput-root': {
-                                        borderRadius: '15px',
-                                    }
-                                }} />
-                            </Grid>
-                        </Grid>
-
-                        <Grid container item xs={12} alignItems="center" spacing={2}>
-                            <Grid item xs={6}>
-                                <Typography variant="body2">Telefono institucional*:</Typography>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <TextField fullWidth variant="outlined" size="small" sx={{
-                                    backgroundColor: '#FFFFFF', borderRadius: '15px', marginTop: 1,
-                                    '& .MuiOutlinedInput-root': {
-                                        borderRadius: '15px',
-                                    }
-                                }} />
-                            </Grid>
-                        </Grid>
-
-                        <Grid container item xs={12} alignItems="center" spacing={2}>
-                            <Grid item xs={6}>
-                                <Typography variant="body2">¿Requiere un intérprete de lenguaje de señas mexicanas?</Typography>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <Grid item>
-                                    <Stack direction="row" spacing={1} sx={{ alignItems: 'center' }}>
-                                        <Typography>No</Typography>
-                                        <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
-                                        <Typography>Sí</Typography>
-                                    </Stack>
-                                </Grid>
                             </Grid>
                         </Grid>
                     </CardContent>
@@ -292,14 +248,14 @@ function PopupRegistro({ onClose }) {
                 </div>
 
                 <CardActions sx={{ justifyContent: 'center' }}>
-                <Button onClick={handleOpenConfirmation} variant="contained" sx={{ backgroundColor: '#E7B756', color: "#1E1E1E", marginTop: 2 }}>Enviar registro</Button>
+                <Button onClick={handleOpenConfirmation} variant="contained" sx={{ backgroundColor: '#E7B756', color: "#1E1E1E", marginTop: 2 }}>Guardar</Button>
                 </CardActions>
             </Card>
 
             {isPopupOpen && (
               <div className="popup-overlay-confirmacion">
                 <div className={`popup-content-confirmacion ${isAnimating ? 'open' : 'close'}`}>
-                    <PopupMSJConfirmacion onClose={handleCloseConfirmation} />
+                    <PopupMSJGuardado onClose={handleCloseConfirmation} />
                 </div>
               </div>
             )}
@@ -307,4 +263,4 @@ function PopupRegistro({ onClose }) {
         </>
     )
 }
-export default PopupRegistro;
+export default PopupModificarCurso;
