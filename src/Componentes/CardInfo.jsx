@@ -26,7 +26,7 @@ function CardInfo(Props) {
     };
     return (
         <>
-            <Card variant="elevation" sx={{ maxWidth: '90%', maxHeight: '60%', backgroundColor: '#A35494', margin: 5, alignItems: 'center', justifyContent: 'center', borderRadius: 5 }}>
+            <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '60%', backgroundColor: '#A35494', margin: 5, alignItems: 'center', justifyContent: 'center', borderRadius: 5 }}>
                 <CardHeader sx={{ color: '#FFFFFF', marginLeft: 2 }} title={Props.NombreCurso} />
                 <CardContent sx={{ color: '#FFFFFF', marginLeft: 2, marginTop: -3 }}>
                     <Typography variant="body2">Persona que imparte el curso : {Props.ExpositorCurso}</Typography>

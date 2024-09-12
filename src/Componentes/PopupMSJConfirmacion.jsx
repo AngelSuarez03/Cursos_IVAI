@@ -5,7 +5,7 @@ import '../Principal/Principal.css'
 function PopupMSJConfirmacion({ onClose }) {
     return (
         <>
-            <Card variant="outlined" sx={{ maxWidth: '35%', minHeight: 500, borderRadius:5 }}>
+            <Card variant="outlined" sx={{  maxWidth: '20%', minHeight: '50%', borderRadius:5, zIndex: 2 }}>
                 <CardContent sx={{ textAlign:'center' }}>
                     <img src={check} className="IconoCard"/>
                     <Typography variant="h4">Registro Exitoso</Typography>
@@ -14,9 +14,7 @@ function PopupMSJConfirmacion({ onClose }) {
                     </Typography>
                 </CardContent>
                 <CardActions sx={{ justifyContent:'center' }}>
-                    <Button onClick={onClose} sx={{ backgroundColor: '#E7B756', color:'#1E1E1E', minWidth:150 }} variant="contained">
-                        Aceptar
-                    </Button>
+                    <Button onClick={onClose} sx={{ backgroundColor: '#E7B756', color:'#1E1E1E', minWidth:150, marginBottom: 2 }} variant="contained">Aceptar</Button>
                 </CardActions>
             </Card>
         </>
