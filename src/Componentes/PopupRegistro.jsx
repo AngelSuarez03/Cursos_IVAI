@@ -4,7 +4,7 @@ import PopupMSJConfirmacion from './PopupMSJConfirmacion.jsx'
 import Arrow from '../assets/arrow.svg'
 import '../Principal/Principal.css'
 
-function PopupRegistro(Props) {
+function PopupRegistro( {onClose} ) {
 
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const handleOpenConfirmation = () => {
@@ -18,27 +18,33 @@ function PopupRegistro(Props) {
         <>
             <Card variant="elevation" sx={{ maxWidth: '100%', maxHeight: '100vh', backgroundColor: '#A35494', margin: 2, justifyContent: 'center', borderRadius: 5, padding: 3 }}>
                 <CardHeader
-                    sx={{ color: '#FFFFFF' }}
+                    sx={{ color: '#FFFFFF', width:'100%', marginLeft: -5 }}
                     title={
-                        <Grid container justifyContent="space-between" alignItems="flex-start">
-                            <Grid item>
-                                <img src={Arrow} alt="Web" className='IconoSalir' />
-                            </Grid>
-                            <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginLeft:-30}}>
-                                Salir
-                            </Typography>
-
-                            <Grid item>
-                                <Typography variant="body2" sx={{ maxWidth: 'auto', maxHeight: 'auto', color: '#FFFFFF',fontSize: '50%' }}>
-                                    Los campos marcados con <br />
-                                    asterisco (*) son obligatorios
-                                </Typography>
-                            </Grid>
-                        </Grid>
+                        <Grid container justifyContent="space-between" alignItems="center">
+            <Grid item>
+                <Grid container alignItems="center">
+                    <img 
+                        src={Arrow} 
+                        alt="Web" 
+                        className='IconoSalir' 
+                        onClick={onClose} 
+                    />
+                    <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold'}}>
+                        Salir
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Grid item>
+                <Typography variant="body2" sx={{ maxWidth: 'auto', maxHeight: 'auto', color: '#FFFFFF', fontSize: '50%' }}>
+                    Los campos marcados con <br />
+                    asterisco (*) son obligatorios
+                </Typography>
+            </Grid>
+        </Grid>
                     }
                 />
 
-                <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginBottom: 0, textAlign:'center',  maxWidth: 'auto', maxHeight: 'auto' }}>
+                <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginBottom: 0, textAlign:'center',  maxWidth: 'auto', maxHeight: 'auto', marginBottom: 2}}>
                     Datos Personales
                 </Typography>
 
@@ -286,7 +292,7 @@ function PopupRegistro(Props) {
             </Card>
 
             {isPopupOpen && (
-                <div className="popup-overlay-inicio">
+                <div className="popup-confirmation">
                     <PopupMSJConfirmacion onClose={handleCloseConfirmation} />
                 </div>
             )}

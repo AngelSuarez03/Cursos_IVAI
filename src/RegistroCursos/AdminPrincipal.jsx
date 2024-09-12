@@ -9,6 +9,7 @@ import MailIcon from '../assets/email.svg';
 import WebIcon from '../assets/web.svg';
 import Ubi from '../assets/ubi.svg'
 import RegistroMain from './RegistroMain';
+import { useState } from 'react';
 
 function AdminPrincipal() {
     return (

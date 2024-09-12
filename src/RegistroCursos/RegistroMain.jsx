@@ -4,22 +4,32 @@ import ModificarCurso from '../assets/update.svg';
 import '../Estilos/RegistroMain.css';
 import { useState } from "react";
 import SelectCurso from "../Componentes/SelectCurso.jsx";
+import CrearCurso from '../Componentes/PopupCrearCurso.jsx';
 
 
 function RegistroMain() {
-    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const [isPopupUpdateOpen, setIsPopupUpdateOpen] = useState(false);
+    const [isPopupAddOpen, setIsPopupAddOpen] = useState(false);
   
-    const handleOpenPopup = () => {
-      setIsPopupOpen(true);
+    const handleOpenUpdatePopup = () => {
+      setIsPopupUpdateOpen(true);
     };
   
-    const handleClosePopup = () => {
-      setIsPopupOpen(false);
+    const handleCloseUpdatePopup = () => {
+      setIsPopupUpdateOpen(false);
+    };
+
+    const handleOpenAddPopup = () => {
+      setIsPopupAddOpen(true);
+    };
+  
+    const handleCloseAddPopup = () => {
+      setIsPopupAddOpen(false);
     };
   
     return (
       <>
-            <Card variant="outlined" sx={{ width:'30%', maxHeight:'70%', borderColor:'#a35494', borderWidth:4, borderRadius:3, display:'inline-flex', margin:2, cursor:'pointer' }}>
+            <Card onClick={handleOpenAddPopup} variant="outlined" sx={{ width:'30%', maxHeight:'70%', borderColor:'#a35494', borderWidth:4, borderRadius:3, display:'inline-flex', margin:2, cursor:'pointer' }}>
                 <CardContent sx={{ textAlign:'center', width:'100%' }}>
                     <img src={AgregarCurso} className="IconoCard"/>
                     <Typography variant="h4" sx={{ color:'#A35494', fontSize:50 }}>Agregar Curso</Typography>
@@ -27,19 +37,25 @@ function RegistroMain() {
             </Card>
   
         
-            <Card onClick={handleOpenPopup} variant="outlined" sx={{ width:'30%', maxHeight:'70%', borderColor:'#a35494', borderWidth:4, borderRadius: 3, display:'inline-flex',margin:2, cursor: 'pointer'}}>
+            <Card onClick={handleOpenUpdatePopup} variant="outlined" sx={{ width:'30%', maxHeight:'70%', borderColor:'#a35494', borderWidth:4, borderRadius: 3, display:'inline-flex',margin:2, cursor: 'pointer'}}>
                 <CardContent sx={{ textAlign:'center', width:'100%' }}> 
                     <img src={ModificarCurso} className="IconoCard"/>
                     <Typography variant='h4' sx={{ color:'#A35494', fontSize:50 }}>Modificar Curso</Typography>
                 </CardContent>
             </Card>
 
-  
-
-        {isPopupOpen && (
+        {isPopupAddOpen && (
           <div className="popup-overlay">
             <div className="popup-content">
-              <SelectCurso onClose={handleClosePopup} /> 
+              <CrearCurso onClose={handleCloseAddPopup} /> 
+            </div>
+          </div>
+        )}
+
+        {isPopupUpdateOpen && (
+          <div className="popup-overlay">
+            <div className="popup-content">
+              <SelectCurso onClose={handleCloseUpdatePopup} /> 
             </div>
           </div>
         )}
