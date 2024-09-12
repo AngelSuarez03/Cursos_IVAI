@@ -16,48 +16,6 @@
 .popup-content {
     border-radius: 10px;
     width: 60%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .popup-overlay-inicio {
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; 
-  }
-  
-  .popup-content-inicio {
-    border-radius: 10px;
-    width: 50%;
-    margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10vh;
-  }
-
-  .popup-confirmation {
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; 
-  }
-
-  .popup{
-
-    border-radius: 10px;
-    width: 50%;
-    height: 100vh;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
     opacity: 0;
     transform: scale(0.9);
