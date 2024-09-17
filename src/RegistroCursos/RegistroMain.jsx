@@ -2,9 +2,10 @@ import { Card, CardContent, Typography } from "@mui/material";
 import AgregarCurso from '../assets/add.svg';
 import ModificarCurso from '../assets/update.svg';
 import '../Estilos/RegistroMain.css';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import SelectCurso from "../Componentes/SelectCurso.jsx";
 import CrearCurso from '../Componentes/PopupCrearCurso.jsx';
+
 
 function RegistroMain() {
     const [isPopupUpdateOpen, setIsPopupUpdateOpen] = useState(false);
@@ -25,7 +26,7 @@ function RegistroMain() {
     const handleCloseAddPopup = () => {
       setIsPopupAddOpen(false);
     };
-
+  
     return (
       <>
             <Card onClick={handleOpenAddPopup} variant="outlined" sx={{ width:'30%', maxHeight:'70%', borderColor:'#a35494', borderWidth:4, borderRadius:3, display:'inline-flex', margin:2, cursor:'pointer' }}>
@@ -60,6 +61,6 @@ function RegistroMain() {
         )}
       </>
     );
-}
+  }
   
-export default RegistroMain;
+  export default RegistroMain;
