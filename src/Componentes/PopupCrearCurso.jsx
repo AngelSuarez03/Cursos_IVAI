@@ -222,8 +222,7 @@ function PopupCrearCurso({ onClose }) {
                                             borderRadius: '15px',
                                         }
                                     }}
-                                    defaultValue=""
-                                >
+                                    defaultValue="">    
                                     <MenuItem value="Aula 1">Aula 1</MenuItem>
                                     <MenuItem value="Aula 2">Aula 2</MenuItem>
                                     <MenuItem value="Sala de conferencias">Sala de conferencias</MenuItem>

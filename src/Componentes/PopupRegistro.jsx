@@ -44,7 +44,7 @@ function PopupRegistro( {onClose} ) {
                     }
                 />
 
-                <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', marginBottom: 0, textAlign:'center',  maxWidth: 'auto', maxHeight: 'auto', marginBottom: 2}}>
+                <Typography variant="h6" sx={{ color: '#FFFFFF', fontSize: '100%', fontWeight: 'bold', textAlign:'center',  maxWidth: 'auto', maxHeight: 'auto', marginBottom: 2}}>
                     Datos Personales
                 </Typography>
 
